@@ -10,6 +10,33 @@
   <header>
     <h1>Gym Tracker</h1>
   </header>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
+<section id="routine-section">
+  <h2>Crear Rutina</h2>
+  <form id="routine-form">
+    <label for="routine-name">Nombre de la rutina:</label>
+    <input type="text" id="routine-name" required>
+    <label for="routine-exercises">Seleccionar ejercicios:</label>
+    <select id="routine-exercises" multiple>
+      <option value="Press de Banca">Press de Banca</option>
+      <option value="Press Inclinado">Press Inclinado</option>
+      <option value="Rompecraneos">Rompecraneos</option>
+      <option value="Polea Triceps">Polea Triceps</option>
+      <option value="Fondos">Fondos</option>
+      <option value="Bicep con Barra">Bicep con Barra</option>
+      <option value="Predicador">Predicador</option>
+      <option value="Bicep Maquina">Bicep Maquina</option>
+      <option value="Dominadas">Dominadas</option>
+      <option value="Remo">Remo</option>
+    </select>
+    <button type="submit">Guardar Rutina</button>
+  </form>
+  <h3>Rutinas Guardadas</h3>
+  <ul id="routine-list"></ul>
+</section>
   <main>
     <section id="add-exercise">
       <h2>Añadir Ejercicio</h2>
@@ -40,19 +67,3 @@
         </tbody>
       </table>
     </section>
-  </main>
-  <script src="script.js"></script>
-</body>
-</html>
-<section id="routine-section">
-    <h2>Crear Rutina</h2>
-    <form id="routine-form">
-      <label for="routine-name">Nombre de la rutina:</label>
-      <input type="text" id="routine-name" required>
-      <label for="routine-exercises">Seleccionar ejercicios:</label>
-      <select id="routine-exercises" multiple></select>
-      <button type="submit">Guardar Rutina</button>
-    </form>
-    <h3>Rutinas Guardadas</h3>
-    <ul id="routine-list"></ul>
-  </section>
